@@ -64,3 +64,34 @@ color: white;
     margin-top: 50px;
     padding: 50px;
 }
+
+.register{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+h2{
+    margin-left: 10px;
+}
+.register input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+}
+.registrazione{
+    margin-top: 50px;
+}
+.action input{
+background-color: crimson;
+border: 0;
+width: 100px;
+}
+.action input:first-child{
+    border: 0;
+    background-color: green;
+}
