@@ -1,3 +1,6 @@
+"use strict"
+console.clear()
+
 const teamMembers = [
   {
     name: "Marco Bianchi",
@@ -36,3 +39,4 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
