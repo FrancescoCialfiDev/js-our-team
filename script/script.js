@@ -43,8 +43,39 @@ const teamMembers = [
 const containerCard = document.querySelector(".container");
 
 teamMembers.forEach(element => {
-  containerCard.innerHTML += `
-<div class="card d-flex">
+  containerCard.innerHTML += genCard(element);
+});
+
+const form = document.getElementById("formRegister")
+const inputs = document.querySelectorAll("input");
+let newObject;
+
+
+
+
+
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault()
+
+  let newUser = []
+  for (const element of inputs) {
+    newUser.push(element.value);
+  }
+
+  newObject = {
+    name: newUser[0],
+    role: newUser[1],
+    email: newUser[2],
+    img: newUser[3],
+  }
+  
+  containerCard.innerHTML += genCard(newObject);
+
+})
+
+function genCard(element) {
+  return `<div class="card d-flex ">
     <div class="img">
         <img src="img/${element.img}" alt="">
     </div>
@@ -55,5 +86,6 @@ teamMembers.forEach(element => {
     </div>
 </div>
 `
-});
+}
+
 

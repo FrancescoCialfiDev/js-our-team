@@ -86,12 +86,12 @@ h2{
 .registrazione{
     margin-top: 50px;
 }
-.action input{
+.action button{
 background-color: crimson;
 border: 0;
 width: 100px;
 }
-.action input:first-child{
+.action button:first-child{
     border: 0;
     background-color: green;
 }
