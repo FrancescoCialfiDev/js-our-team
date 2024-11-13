@@ -37,7 +37,7 @@ const teamMembers = [
     role: "Analyst",
     email: "danielaamet@team.com",
     img: "img/female3.png"
-  }
+  },
 ];
 
 const containerCard = document.querySelector(".container");
@@ -69,7 +69,7 @@ form.addEventListener("submit", (event) => {
     email: newUser[2],
     img: newUser[3],
   }
-  
+
   containerCard.innerHTML += genCard(newObject);
 
 })

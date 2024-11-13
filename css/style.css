@@ -22,7 +22,7 @@ a{
     display: flex;
     align-items: center;
     margin: 12px 12px;
-    width: calc((100% / 3) - 24px );
+    min-width: calc((100% / 3) - 24px );
     border-radius: 10px ;
     background-color: black;
 }
@@ -83,6 +83,7 @@ h2{
     height: 50px;
     margin: 10px;
 }
+
 .registrazione{
     margin-top: 50px;
 }
