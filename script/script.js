@@ -40,3 +40,19 @@ const teamMembers = [
   }
 ];
 
+const containerCard = document.querySelector(".container");
+
+teamMembers.forEach(element => {
+  containerCard.innerHTML += `
+<div class="card d-flex">
+    <div class="img">
+        <img src="img/${element.img}" alt="">
+    </div>
+    <div class="details">
+        <p class="nome">${element.name}</p>
+        <p class="work">${element.role}</p>
+        <a href="mailto:marcobianchi@team.com">${element.email}</a>
+    </div>
+</div>
+`
+});

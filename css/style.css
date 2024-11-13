@@ -1,3 +1,4 @@
+/* General */
 *{
     padding: 0%;
     margin: 0%;
@@ -16,14 +17,15 @@ a{
     flex-wrap: wrap;
 }
 
- .card {
+/* Card */
+.card {
     display: flex;
     align-items: center;
     margin: 12px 12px;
     width: calc((100% / 3) - 24px );
+    border-radius: 10px ;
     background-color: black;
 }
-
 .details{
     padding: 10px;
 }
@@ -31,23 +33,21 @@ a{
     color: white;
     padding: 2px;
 }
-
 .details .nome{
     font-weight: bold;
 }
-
 .img img {
     width: 100px;
     object-fit: contain;
     display: block;
+    border-radius: 10px
 }
-
 .details {
     font-size: 16px; 
     color: #333;
 }
     
-
+/* Header */
 header {
 display: flex;
 align-items: center;
@@ -57,8 +57,8 @@ background-color: black;
 color: white;
 }
 
+/* Main */
 #mainContent{
-    
     margin: 0% auto;
     width: 80%;
     margin-top: 50px;
